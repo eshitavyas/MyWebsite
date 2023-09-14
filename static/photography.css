@@ -57,18 +57,18 @@ h2 {
 }
 
 #section1 {
-    background-image: url('/static/places/places.jpg');
+    background-image: url('static/places/places.jpg');
     background-size: cover; /* Adjust the background size */
 }
 
 
 #section2 {
-    background-image: url('/static/animals/animals.jpg');
+    background-image: url('static/animals/animals.jpg');
     background-size: cover;
 }
 
 #section3 {
-    background-image: url('/static/plants/plants.jpg');
+    background-image: url('static/plants/plants.jpg');
     background-size: cover;
 }
 
