@@ -58,12 +58,11 @@ h2 {
 
 #section1 {
     background-image: url('places/places.jpg');
-    background-size: cover; /* Adjust the background size */
+    background-size: cover;
 }
 
-
 #section2 {
-    background-image: url('/animals/animals.jpg');
+    background-image: url('animals/animals.jpg');
     background-size: cover;
 }
 
