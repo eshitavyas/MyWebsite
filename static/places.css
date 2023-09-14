@@ -1,0 +1,112 @@
+/* Reset some default styles */
+body {
+    background-color: #3C2A21;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+/* Style the header section */
+header {
+    text-align: center;
+    background-color: #1A120B; /* Header background color */
+    color: #FAF0E6; /* Header text color */
+    padding: 20px;
+    margin-left: 20px; /* Add margin from the left side */
+    margin-right: 20px; /* Add margin from the right side */
+}
+
+.description {
+    font-size: 25px;
+    font-weight: 200;
+    color: #c8beb4;
+    margin-top: 70px;
+    margin-left: 20px; /* Add margin from the left side */
+    margin-right: 20px; /* Add margin from the right side */
+    text-align: left;
+}
+
+/* Style the navigation bar */
+.navbar {
+    position: absolute;
+    top: 15px;
+    right: 23px; /* Adjust the right property to move it to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FAF0E6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #d5c13f; /* Change color on hover */
+}
+
+/* Style the main content area */
+main {
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px; /* Add margin from the left side */
+    margin-right: 20px; /* Add margin from the right side */
+}
+
+/* Style the photo gallery section */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, adjust as needed */
+    gap: 20x; /* Gap between photos */
+    margin-top: 20px; /* Space between header and gallery */
+}
+
+/* Style individual photos */
+.photo {
+    text-align: center;
+    background-color: #3C2A21; /* Photo background color */
+    padding: 10px;
+    border-radius: 5px;
+    position: relative; /* Needed for absolute positioning of captions */
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Style captions */
+.caption {
+    position: absolute;
+    top: 60%; /* Move the caption to the vertical center of the photo */
+    left: 50%; /* Move the caption to the horizontal center of the photo */
+    transform: translate(-50%, -44%); /* Center the caption exactly */
+    width: 90%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0); /* Background color with transparency */
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center; /* Center-align caption text */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition on hover */
+}
+
+/* Show captions on hover */
+.photo:hover .caption {
+    opacity: 1;
+}
+
+
+

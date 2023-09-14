@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EshitaVyas-About Me</title>
+    <link rel="stylesheet" href="/static/about.css"> <!-- Link to your CSS file -->
+    <style>
+        body{
+            font-family: Helvetica;
+        }
+     /* CSS for the Table of Contents */
+    .navbar {
+    position: absolute;
+    top: 15px;
+    right: 10px; /* Adjust the right property to move it to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FAF0E6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #b6aa61; /* Change color on hover */
+}
+
+/* Style for the social links */
+.social-links {
+    position: absolute;
+    top: 25px; /* Adjust the top position as needed */
+    left: 25px; /* Adjust the left position as needed */
+    z-index: 100; /* Ensure the links appear above other content */
+}
+
+/* Style for the social links themselves */
+.social-links a {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+    text-decoration: none;
+    color: #FAF0E6; /* Change the color to fit your design */
+    font-weight: bold; /* Adjust font weight as desired */
+    font-size: 18px; /* Adjust font size as desired */
+}
+
+/* Style for the links on hover */
+.social-links a:hover {
+    color: rgb(74, 138, 177);
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+        body {
+            background-color: #3C2A21;
+            padding: 70px;
+        }
+        section {
+            background-color: #1A120B;
+        }
+        .table-of-contents {
+            font-size: 20px;
+            background-color: #1A120B; /* Background color for the box */
+            padding: 10px; /* Adjust padding as needed */
+            text-align:center; /* Center-align the links */
+        }
+
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Display links horizontally */
+            justify-content: center; /* Center-align links horizontally */
+        }
+
+        .table-of-contents li {
+            margin: 0 15px; /* Adjust spacing between links */
+        }
+
+        .table-of-contents a {
+            text-decoration: none;
+            color: rgb(74, 138, 177);; /* Link color */
+        }
+
+        /* CSS for content sections */
+        .content-section {
+            margin: 20px; /* Add margins to create a blog-like format */
+            padding: 20px; /* Add padding for content */
+         /* border: 1px solid #ccc; /* Add a border for separation */
+        }
+        h1 {
+            color: #FAF0E6;
+        }
+        p{
+            color:#c8beb4;
+        }
+    .certificate-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 10px; /* Adjust the gap between certificates */
+}
+
+.certificate-box {
+    cursor: pointer;
+    width: 90%; /* Each certificate box takes up 1/3 of the container width */
+    padding: 0px;
+    background-color: #1A120B;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.certificate-box img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 0px; /* Center the image vertically and add margin below it */
+    border-radius: 6px;
+}
+
+.certificate-box:hover {
+    transform: scale(1.5);
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="photography.html">Gallery</a></li>
+        </ul>
+    </nav>
+            <!-- Social media icons -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/eshita-vyas-a40b881b3/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/eshitavyas" target="_blank">GitHub</a>
+            </div>
+
+        <section class="about content-section">
+                    <!-- Table of Contents (Links to Other Sections) -->
+        <div class="table-of-contents">
+            <ul>
+                <li><a href="#skills"><u>Technical Skills</u></a></li>
+                <li><a href="#projects"><u>Projects</u></a></li>
+                <li><a href="#certificates"><u>Certificates</u></a></li>
+                <li><a href="#volunteer"><u>Give-back</u></a></li>
+                <li><a href="#activities"><u>Leadership Roles</u></a></li>
+                <li><a href="#contact"><u>Contact Me</u></a></li>
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <h1>About Me</h1>
+        <p style="text-align: justify; margin:30px; font-size: larger;">
+            I'm currently in my 4th year of Bachelor's degree in Computer Science at Pes University, Bangalore. My primary focus is on applied machine learning and research engineering.
+            My research interests center around natural language generation and understanding. I also enjoy building websites and frontend designing.
+            I am actively looking for an internship to apply my technical skills in real-world contexts. 
+        </p>
+      
+        <p style="text-align: justify; margin:30px; font-size:larger;">
+           I believe in understanding the world from others perspective and help create a change through my actions, technology and projects.<br>
+           Therefore, I am willing to take up projects that are impactful to the society and make the world a better place to live in. 
+
+        </p>
+        
+            
+        </section>
+
+        <section class="skills content-section" id="skills">
+            <!-- Skills section content -->
+            <div class="skills">
+                <h1>Skills</h1>
+                <ul style="color:#c8beb4; font-size: large;">
+                    <li>💻 Programming Languages: Java, Python</li>
+                    <li>🟢Frameworks:Django, Node.js</li>
+                    <li>🌐 Frontend Development: HTML, CSS, JavaScript</li>
+                    <li>📊 Database: MongoDB, SQL, PostgreSQL</li>
+                    <li>🧠 Machine Learning: TensorFlow, Keras, CNNs</li>
+                    <li>🛠️ Software Engineering: SDLC, Agile, Scrum</li>
+                    <li>☁️ Cloud Technology: GCP/AWS Basics</li>
+                </ul>
+            </div>        
+        </section>
+
+        <section class="projects content-section" id="projects">
+            <!-- Projects section content -->
+            <div class="projects">
+                <h1>Projects</h1>
+                <ul style="color:#c8beb4; font-size: large;">
+                    <li><a style="color: rgb(74, 138, 177);" href="https://github.com/eshitavyas/misogyny-detection">Misogyny Detection</a><i style="color: #8f8c8c;"> [individual]</i> - Processed data, built 3 ML models to detect sexist statements against women. </li>
+                    <p><i>Tools - TensorFlow, Keras, Python, WordCloud Library</i></p>
+                    <li><a style="color: rgb(74, 138, 177);" href="https://github.com/eshitavyas/Pix2Struct_ONNX">Pix2Struct to ONNX</a><i style="color: #8f8c8c;"> [individual, ongoing research]</i> - Goal was to achieve faster inference time,decreased model size and maintain orgiginal accuracy.</li>
+                    <p><i>Tools - Python, Hugging Face Library, Tranformers</i></p>
+                    <li><a style="color: rgb(74, 138, 177);">JetSetGo</a><i style="color: #8f8c8c;"> [group]</i> - Website for making flight reservations.</li>
+                    <p><i>Tools - Java, SpringBoot</i></p>
+                    <li><a style="color: rgb(74, 138, 177);">Capstone</a><i style="color: #8f8c8c;"> [ongoing]</i> - Web App to generate personalised time table for students, evalute their subject understanding through quiz scores and Q&A chatbot for doubt clearance.</li>
+                    <p><i>Tools - Django, PostreSQL, HTML, CSS, JavaScript, Evolutionary Algorithm</i></p>
+                    <li><a style="color: rgb(74, 138, 177);">This Website</a><i style="color: #8f8c8c;"> [individual]</i></li>
+                    <p><i>Tools - HTML, CSS, Flexbox, Grid </i></p>   
+                </ul>
+            </div>
+        </section>
+
+        <section class="certificates content-section" id="certificates">
+            <h1>Certificates</h1> 
+                <div class="certificate-container">
+                    <div class="certificate-box">
+                        <a href="https://www.udemy.com/certificate/UC-36dc7b68-697a-40ac-9fc7-ade7009145e4/" target="_blank">
+                            <img src="indexpics/c1.png" alt="Certificate 1">
+                        </a>
+                    </div>
+                    <div class="certificate-box">
+                        <a href="https://www.credly.com/badges/7e59edc1-2148-4762-b476-f0a79b371203/public_url" target="_blank">
+                            <img src="indexpics/c3.png" alt="Certificate 2">
+                        </a>
+                    </div>
+                    <div class="certificate-box">
+                        <a href="https://www.credly.com/badges/e4a1b3f1-ce37-455a-8078-c3ba3465c07a/public_url" target="_blank">
+                            <img src="indexpics/c2.png" alt="Certificate 3">
+                        </a>
+                    </div>
+                    <div class="certificate-box">
+                            <img src="indexpics/c6.png" alt="Certificate 4">
+                        </a>
+                    </div>
+                    <div class="certificate-box">
+                        <a href="https://www.credly.com/badges/c618e1d0-2f48-4639-a501-9ae092dd8cad/public_url" target="_blank">
+                            <img src="indexpics/c4.png" alt="Certificate 5">
+                        </a>
+                    </div>
+                    <div class="certificate-box">
+                        <a href="https://googlecloud.qwiklabs.com/public_profiles/a4bad162-140d-4b8f-807d-e89294cfcaa9" target="_blank">
+                            <img src="indexpics/c5.png" alt="Certificate 6">
+                        </a>
+                    </div>
+                </div>
+        </section>
+        <section class="volunteer content-section" id="volunteer">
+            <div class="volunteer">
+                <h1>Give-back</h1>
+                <ul style="color: #FAF0E6; font-size: large;">
+                    <p style="font-size: large;"><i>As an animal lover, being empathetic is my core principle. Giving back to the universe is something I deeply believe in.</i></p>
+                    <hr>
+                    <br>
+                    <li>Teach For India</li>
+                    <p style="color: #a19d9d;">-  Taught Mathematics and English to students who have seen adversities of life. My absolute favorites were Rifa and Aniket.<br>
+                       -  I shared some of the most beautiful memories with my students and can never really forget the experience I encountered doing this internship.<br> 
+                       -  It felt important to work as an educator and empower people with education during times like COVID-19.</p>
+                    <li>Animal Care Associate</li>
+                    <p style="color: #a19d9d;">
+                        -  During the COVID-19 pandemic and lockdown, my mother and I made nightly outings to provide food and water to Indie dogs.<br>
+                        -  Transport sick dogs to veterinary care.<br>
+                        -  Fostered puppies and took them to shelters like <a href="https://cupabangalore.org/" style="color: rgb(74, 138, 177);">CUPA</a> and <a href="https://charlies-care.com/" style="color: rgb(74, 138, 177);">CARE</a> .  
+                        -  Spoken up against animal cruelty and reported various issues on animal abuse to the Animal Welfare authorities.<br><br>
+
+                        <i style="color: rgb(116, 46, 46);">I want to help create a change in the way people think about animals, dogs(Indies especially)-ADOPT DON'T SHOP.</i>
+                        
+                    </p>
+                    <li>Reap Benefit</li>
+                    <p style="color: #a19d9d;"> -  Recycled and saved paper from all the incomplete notebooks that were owned by me in my entire student life.
+                        <br>
+                        - Saved 2969 units of electricity in a year.<br>
+                        - Helped save water by redirecting the sink filter water to domestic household use.<br>
+                        - Saved 8,11,516 litres of water in a year.<br>
+                        - Diverted waste from landfills.</p>
+                   
+                </ul>
+            </div> 
+   
+
+
+        </section>
+        
+        
+        
+        
+        
+        <section class="activities content-section" id="activities">
+            <!-- Activities section content -->
+            <h1>Leadership Roles</h1>
+            <div class="activities">
+                <ul style="color:#FAF0E6; font-size: large;">
+                    <li style="color:#FAF0E6; font-size:large;">HackerSpace</li>
+                    <p><i>Core Head | Marketing & Social Media</i></p>
+                    <li style="color:#FAF0E6; font-size:large;">SpaceJam</li>
+                    <p><i>Event Organiser | Media & Marketing </i></p>
+                    <li style="color:#FAF0E6; font-size:large;">SmoothieTime</li>
+                    <p><i> Founder </i></p>
+                    <li style="color:#FAF0E6; font-size:large;">Delhi Public School</li>
+                    <p><i> Athlete </i></p>  
+                </ul>
+            </div> 
+        </section>
+
+        <section class="contact content-section" id="contact">
+             <!-- Contact section content -->
+             <h1>Contact</h1>
+             <p style="font-size: large;">You can reach out to me via email at <a style="color: rgb(74, 138, 177);" href="mailto:eshuwork1010@gmail.com">eshuwork1010@gmail.com</a>.</p>
+        </section>
+        <footer style="text-align: center; font-size: large; color: #FAF0E6;">
+            <p>&copy; 2023 Eshita Vyas | All Rights Reserved</p>
+        </footer>
+</body>
+</html>

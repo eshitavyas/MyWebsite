@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1A120B;
+}
+/* Style the navigation bar */
+.navbar {
+    position: absolute;
+    top: 15px;
+    right: 23px; /* Adjust the right property to move it to the left */
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FAF0E6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #d5c13f; /* Change color on hover */
+}
+h2 {
+    font-size: 6rem;
+    font-style: oblique;
+    font-weight: 100;
+    color: rgb(250, 250, 250);
+    opacity: 0.5;
+
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    transition: background-color 0.3s, opacity 0.3s;
+    cursor: pointer;
+    position: relative; /* Add this for positioning */
+}
+
+#section1 {
+    background-image: url('/static/places/places.jpg');
+    background-size: cover; /* Adjust the background size */
+}
+
+
+#section2 {
+    background-image: url('/static/animals/animals.jpg');
+    background-size: cover;
+}
+
+#section3 {
+    background-image: url('/static/plants/plants.jpg');
+    background-size: cover;
+}
+
+.section:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.section:hover .content {
+    opacity: 1;
+}
+

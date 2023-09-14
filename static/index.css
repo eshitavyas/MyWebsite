@@ -1,0 +1,153 @@
+/* Reset some default styles */
+body {
+    background-color:#3C2A21;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+.gradient-heading {
+    background-image: linear-gradient(to right, #4a1f03, #705031, #968365, #beb8a0, #edeee0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* Style the header section */
+header {
+    text-align: center;
+    background-color: #1A120B;
+    padding: 20px;
+}
+
+/* Style the navigation bar */
+.navbar {
+    position: absolute;
+    top: 15px;
+    right: 10px; /* Adjust the right property to move it to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FAF0E6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #b6aa61; /* Change color on hover */
+}
+
+/* Style for the social links */
+.social-links {
+    position: absolute;
+    top: 25px; /* Adjust the top position as needed */
+    left: 25px; /* Adjust the left position as needed */
+    z-index: 100; /* Ensure the links appear above other content */
+}
+
+/* Style for the social links themselves */
+.social-links a {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+    text-decoration: none;
+    color: #FAF0E6; /* Change the color to fit your design */
+    font-weight: bold; /* Adjust font weight as desired */
+    font-size: 18px; /* Adjust font size as desired */
+}
+
+/* Style for the links on hover */
+.social-links a:hover {
+    color: rgb(74, 138, 177);
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+/* Style the profile image */
+.profile-image img {
+    border-radius: 50%; /* Creates a circular shape */
+    width: 230px;
+    height: 150x;
+    display: block;
+    margin: 160px auto 0; /* Center the image and add space below */
+}
+
+h1 {
+    font-size: 50px;
+    font-weight:500;
+    color: #FAF0E6;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow content */
+    animation: typing 2s steps(100, end) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Style the description about you */
+.description {
+    font-size: 30px;
+    font-weight: 200;
+    color: #c8beb4;
+    margin-top: 20px;
+}
+
+/* Style the link boxes */
+.link-box {
+    display: inline-block;
+    cursor: pointer;
+    width: 30%; /* Adjust the width to fit two boxes side by side */
+    padding: 20px;
+    background-color: #E5E5CB;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text within the boxes */
+    margin: 50px; /* Add some margin between the boxes */
+}
+
+.link-box img {
+    width: 80%;
+    height: 80%;
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0 auto 10px; /* Center the image vertically, and add margin below it */
+    border: 2px solid #333;
+}
+
+.link-box h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #161515;
+    margin-top: 10px;
+}
+
+.link-box p {
+    font-size: 22px;
+    color: #262424;
+    margin-top: 10px;
+}
+
+/* Style the main content area */
+main {
+    text-align: center;
+    padding: 20px;
+}
+/* Add hover effect to the link boxes */
+.link-box:hover {
+    transform: scale(1.15); /* Increase size on hover */
+}

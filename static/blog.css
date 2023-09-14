@@ -1,0 +1,103 @@
+body {
+    background-color: #1A120B;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+     /* Background color for the content */
+     
+}
+/* Style the navigation bar */
+.navbar {
+    position: absolute;
+    top: 15px;
+    right: 10px; /* Adjust the right property to move it to the left */
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FAF0E6;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #b6aa61; /* Change color on hover */
+}
+
+/* Style for the social links */
+.social-links {
+    position: absolute;
+    top: 25px; /* Adjust the top position as needed */
+    left: 25px; /* Adjust the left position as needed */
+    z-index: 100; /* Ensure the links appear above other content */
+}
+
+/* Style for the social links themselves */
+.social-links a {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between links as needed */
+    text-decoration: none;
+    color: #FAF0E6; /* Change the color to fit your design */
+    font-weight: bold; /* Adjust font weight as desired */
+    font-size: 18px; /* Adjust font size as desired */
+}
+
+/* Style for the links on hover */
+.social-links a:hover {
+    color: rgb(74, 138, 177);
+    text-decoration: underline; /* Underline the links on hover */
+}
+
+.content {
+    padding: 70px;
+}
+
+p {
+    font-size: 20px;
+    color: #c8beb4;
+    margin-top: 40px;
+}
+
+hr {
+    border: 1px solid #ddd; /* Line after the first paragraph */
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #c8beb4;
+}
+
+ul {
+    color: #c8beb4;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(74, 138, 177);
+}
+
+/* Add more CSS styles as needed */
